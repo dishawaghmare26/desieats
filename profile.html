@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - DesiEats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-brand" style="text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/3595/3595458.png" alt="DesiEats Logo" class="logo-img">
+                <span class="brand-name">DesiEats</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Recipes</a>
+                <a href="#" class="nav-link">Categories</a>
+                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">About Us</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Desktop Actions -->
+            <div class="nav-actions desktop-nav">
+                <div id="guest-actions" class="hidden">
+                    <a href="login.html" class="btn btn-ghost">Login</a>
+                    <a href="signup.html" class="btn btn-outline">Sign Up</a>
+                </div>
+                <div id="user-actions">
+                    <a href="profile.html" class="btn btn-ghost">Profile</a>
+                    <button id="logoutButton" class="btn btn-outline">Logout</button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn">
+                <button class="btn btn-ghost btn-icon" id="mobileMenuToggle">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                    <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden" id="mobileNav">
+            <div class="mobile-nav-content">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="#" class="mobile-nav-link">Recipes</a>
+                <a href="#" class="mobile-nav-link">Categories</a>
+                <a href="#" class="mobile-nav-link">Blog</a>
+                <a href="#" class="mobile-nav-link">About Us</a>
+                <a href="#" class="mobile-nav-link">Contact</a>
+                <div class="mobile-nav-actions">
+                    <div id="mobile-guest-actions" class="hidden">
+                        <a href="login.html" class="btn btn-ghost btn-full">Login</a>
+                        <a href="signup.html" class="btn btn-outline btn-full">Sign Up</a>
+                    </div>
+                    <div id="mobile-user-actions">
+                        <a href="profile.html" class="btn btn-ghost btn-full">Profile</a>
+                        <button id="mobileLogoutButton" class="btn btn-outline btn-full">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <img src="https://i.pravatar.cc/150?u=a042581f4e29026704d" alt="User Avatar" class="profile-avatar">
+                    <h1 class="profile-name">Alex Doe</h1>
+                    <p class="profile-email">alex.doe@example.com</p>
+                </div>
+                <div class="profile-body">
+                    <h2 class="profile-section-title">Profile Summary</h2>
+                    <p class="profile-bio">
+                        Passionate home cook exploring the rich flavors of Indian cuisine. My journey is all about sharing simple, delicious recipes that bring joy to the dinner table. Follow along for weekly culinary adventures!
+                    </p>
+                    <div class="profile-actions">
+                        <a href="#" class="btn btn-outline">My Recipes</a>
+                        <a href="#" class="btn btn-outline">Favorites</a>
+                        <a href="#" class="btn btn-outline">Settings</a>
+                    </div>
+                </div>
+                <div class="profile-footer">
+                    <button id="logoutButton" class="btn btn-outline btn-full">Logout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+       <div class="container">
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 DesiEats. All Rights Reserved. Made with ❤️ for food lovers everywhere.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
